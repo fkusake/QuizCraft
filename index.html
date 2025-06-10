@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/77189f4243.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="headerdiv">
+            <div class="headerlogodiv">
+                <p><i class="fa-solid fa-q"></i>uiz</p>
+                <img src="brain-1773892_1920.png" alt="">
+                <p><i class="fa-solid fa-c"></i>raft</p>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="Sec1">
+            <div class="sec1div1">
+                <div class="div1sub1">
+                    <h1>Build Custom</h1>
+                    <span class="div1span1">Quizzes...</span>
+                    <h1>in Seconds</h1>
+                    <h2>QuizCraft transforms your text into interactive quizzes and learning tools.</h2>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="Sec2">
+            <div class="sec2div2">
+
+                <div class="sec2Emp1">
+
+                <div class="div2sub1 div2subs">
+                    <button class="crossText">X</button>
+                    <h2>TEXT</h2>
+                    <p class="plainPara">Generate Quizzes, Cloze test, Summaries with help of plain text just copy & paste it here...</p>
+                    <form class="formdiv2"   action="">
+                        <textarea class="textArea" name="text"  placeholder="DROP....."></textarea>
+                        <div class="formbuttons">
+                        <div  class="textbutton">SUBMIT</div>
+                         <button name="generatebytext" value="generatebytext" class="generatebytext">GENERATE</button>
+                          <button name="clear" value="clear" class="clearbtn1 clearbtn">CLEAR</button>
+                         </div>
+                    </form>
+                </div>
+
+
+                <div class="div2sub2 div2subs">
+                     <button class="crossFile">X</button>
+                    <h2>FILE</h2>
+                    <p>Generate Quizzes, Cloze test, Summaries with help of File just drop it here...</p>
+                     <div class="filewrapper">
+                       <label class="custombutton" for="real-file">UPLOAD</label>
+                       <input type="file" id="real-file" class="fileinput" accept="application/pdf"/>
+                        <button name="generatebytext" value="generatebytext" class="generatebyfile">GENERATE</button>
+                        <button name="clear" value="clear" class="clearbtn2 clearbtn">CLEAR</button>
+                   </div>
+                   
+
+                </div>
+
+                </div>
+
+                <div class="sec2Emp2">
+                    <button class="summarybtn div2btns" name = "summary" value="summary">
+                       Summary
+                    </button>
+                    <button class="fillsbtn div2btns" name="fill" value="fill">
+                        Cloze Test
+                        </button>
+                    <button class="mcqbtn div2btns" name="mcq" value="mcq">
+                      MCQ'S
+                        </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Sec3">
+            <div  class="sec3h1">
+               <h1>GENERATING....</h1>
+               </div>
+            <div class="sec3div3">
+
+                   <form action="" class="questionform fade-in">
+
+                  
+                    <div class="submitDiv">
+                        <button class="formSubmit">SUBMIT</button>
+                    </div>
+                  </form>
+
+                   </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="footdiv">
+            <div class="footdiv1">
+            </div>
+            <div class="footdiv2">
+
+                <div class="footerlogo">
+                <p><i class="fa-solid fa-q"></i>uiz</p>
+                <img src="brain-1773892_1920.png" alt="">
+                <p><i class="fa-solid fa-c"></i>raft</p>
+                </div>
+
+                <div class="upperLine"></div>
+
+                <div class="information">
+                    <div class="info">
+                        <h1>INFO</h1>
+                        <p>Name: FulToo Developers</p>
+                        <p>Location: Bengaluru,Karnataka</p>
+                        <p>Mail: gagan20tvl@gamil.com</p>
+                        <p>Phone: 7795440766</p>
+                    </div>
+                    <div class="horline"></div>
+
+                    <div class="contact">
+                        <h1>CONTACT</h1>
+                        <div class="fav">
+                       <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a> 
+                       <a href="https://www.linkedin.com/in/gagandeep2012"><i class="fa-brands fa-linkedin"></i></a> 
+                       <a href="https://github.com/fkusake"><i class="fa-brands fa-github"></i></a> 
+                       <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="horline"></div>
+
+                    <div class="rateus">
+                        <h1>FEEDBACK</h1>
+                        <div class="feed">
+                        <textarea name="feed" id="feee" class="feedtext" placeholder="FEEDBACK..."></textarea>
+                        <button class="feedbtn">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
