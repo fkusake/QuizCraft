@@ -1,0 +1,704 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/* Header CSS */
+.headerdiv{
+    width: 100%;
+    height: 5.5em;
+    border: 1px solid black;
+    background-color: black;
+}
+.headerlogodiv{
+    width: 15%;
+    height: 100%;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+   padding: 0.3em;
+   align-items: center;
+   border-radius: 0.3em;
+}
+.headerlogodiv img{
+    width: 30%;
+    height: 60px;
+}
+.headerlogodiv p{
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: white;
+}
+
+/* Main CSS */
+main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5em;
+}
+
+/* Section 1 */
+.Sec1{
+    width: 100%;
+    height: 90vh;
+    background-image: url("spectrum-553212.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec1div1{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    top: 0.8em;
+}
+
+.div1sub1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div1sub1 h1{
+    font-size: 6em;
+    background: linear-gradient(to right, white , rgb(187, 187, 226));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.div1sub1 h2{
+    color: white;
+    font-weight: lighter;
+}
+.div1span1{
+     font-size: 6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    width:73%;
+}
+
+/* Section 2 */
+.Sec2{
+    width: 100%;
+    height: 60vh;
+    /* border: 2px solid red; */
+    transition: height 0.5s ease;
+
+    /* height: 100vh; */
+
+    /* height: 60vh; */
+}
+.Sec2.g1{
+    height: 100vh;
+}
+
+.sec2div2{
+    position: relative;
+    width: 95%;
+    height: 80%;     
+    margin: auto;
+    top: 0.8em;
+    display:  flex;
+    flex-direction: column;
+    column-gap: 1em;
+    transition: height 0.5 ease;
+
+    /* height: 95%; */
+
+
+     /* height: 80%;  */
+}
+
+.sec2div2.g2{
+    height: 95%;
+}
+.sec2Emp1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    width: 100%;
+    height: 100%;
+    transition: height 0.5s ease;
+
+    /*  height: 50% */
+
+     /* height: 100%; */
+}
+
+.sec2Emp1.g3{
+    height: 50%;
+}
+.sec2Emp2{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    display: none;
+}
+
+.sec2Emp2 button{
+    width: 20%;
+    height: 70%;
+   border-radius: 1em;
+    background: #C2D13E;
+    background: conic-gradient(from 0deg, #C2D13E, #0DD14E);
+    font-weight: bolder;
+    font-size: 3em;
+    border: none;
+    color: white;
+    transition: width 0.5s ease;
+}
+
+.div2btns.grow{
+    margin: auto;
+    width: 60%;
+}
+
+.div2subs{
+    width: 50%;
+    height: 100%;
+     box-shadow: 0px 0px 5px black;
+     border-radius: 0.5em;
+    background: #C2D13E;
+    background: conic-gradient(from 0deg, #C2D13E, #0DD14E);
+     padding:0.5em;
+}
+
+.div2sub1{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: width 2s ease;
+}
+.div2sub1.enlarge2{
+    margin: auto;
+    width: 100%;
+}
+
+.div2sub1 h2{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.div2sub1 p{
+    font-size: 1.7em;
+    text-align: center;
+     font-weight: lighter;
+}
+
+.div2sub1 form{
+    width: 95%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+
+
+.formdiv2 textarea{
+    width: 100%;
+    height: 80%;
+    resize: none;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.5s ease;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.textArea.dis{
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+.formdiv2 textarea:focus{
+    outline: none;
+}
+
+
+
+.formbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1.5em; 
+}
+
+.formbuttons div{
+    border: none;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.formbuttons .generatebytext{
+    border: none;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    display: none;
+    opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.generatebytext.popin{
+    display: inline-block;
+  opacity: 1;
+}
+
+.clearbtn{
+    border: none;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.crossText{
+    position: absolute;
+    border-radius: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    display: none;
+}
+
+
+.div2sub2{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 2s ease;
+    position: relative;
+}
+.div2sub2.enlarge1{
+    margin: auto;
+    width: 100%;
+}
+
+.div2sub2 h2{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.div2sub2 p{
+    font-size: 1.7em;
+    text-align: center;
+     font-weight: lighter;
+}
+
+.filewrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 1em;
+    }
+
+    .fileinput {
+      display: none;
+    }
+
+    .custombutton {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color:black;
+      color: white;
+      cursor: pointer;
+      border-radius: 0.5em;
+      text-align: center;
+    }
+
+    .filename {
+      margin-top: 0.5em;
+      font-size: 0.6em;
+      color: #333;
+    }
+    .generatebyfile{
+    border: none;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    display: none;
+    opacity: 0;
+  transition: opacity 0.5s ease;
+    }
+
+    .generatebyfile.popin{
+    display: inline-block;
+  opacity: 1;
+}
+.crossFile{
+    position: absolute;
+    border-radius: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    display: none;
+}
+
+/* Section 3 */
+
+.Sec3{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    row-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    display: none;
+}
+
+.sec3h1{
+    width: 40%;
+    background: #C2D13E;
+    background: conic-gradient(from 0deg, #C2D13E, #0DD14E);
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    animation: pulse 2s infinite ease-in-out;
+    font-size: 3em;
+}
+
+@keyframes pulse {
+   0%, 100% {
+    width: 40%;
+  }
+  50% {
+    width: 95%; /* Adjust for how much it should grow */
+  }
+}
+
+.sec3h1 h1{
+    font-weight: lighter;
+    color: black;
+}
+
+.sec3div3{
+    width:95%;
+    height: auto;
+    padding: 0.5em;
+
+}
+
+
+.questionform{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+
+/* MCQS */
+.QuestionDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 5px black;
+    row-gap: 0.5em;
+}
+.ques{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+     box-shadow: 0px 0px 5px black;
+}
+.QuestionDiv h3{
+    padding: 0.5em;
+     background: #C2D13E;
+    background: conic-gradient(from 0deg, #C2D13E, #0DD14E);
+    font-weight: lighter;
+    color:black;
+    border-radius: 0.5em;
+    font-size: 2em;
+}
+.submitDiv{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5em;
+     column-gap: 0.5em;
+     display: none;
+}
+.submitDiv button{
+     border: none;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+/* Fill in the Blanks */
+
+
+.fillarea{
+    resize: none;
+    border-radius: 0.5em;
+    height: 10em;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+}
+
+.fillarea:focus{
+    outline: none;
+}
+/* summary */
+.summaryPara{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 5px black;
+    row-gap: 0.5em;
+    background: #C2D13E;
+    background: conic-gradient(from 0deg, #C2D13E, #0DD14E);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+/* Result Div */
+.resultDiv{
+    height: 10em;
+    background: #C2D13E;
+    background: conic-gradient(from 0deg, #C2D13E, #0DD14E);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5em;
+    width: 100%;
+}
+.exportBtn{
+    border: none;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    width: 10%;
+}
+.scorePara{
+    font-size: 3em;
+    color: white;
+    font-weight: bolder;
+}
+.scoreDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1.5em;
+    width: 80%;
+}
+.exitBtn
+{
+ border: none;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    width: 10%;   
+}
+
+
+
+
+/* Footer CSS */
+.footdiv{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+.footdiv1{
+    width: 100%;
+    height: 2%;
+    background-color:lawngreen;
+}
+.footdiv2{
+    width: 100%;
+    height: 98%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1em;
+}
+.footerlogo{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo p{
+    color: white;
+    text-decoration: underline;
+}
+
+.footerlogo img{
+    width: 6%;
+    height: 100%;
+}
+.information{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+/* .information div{
+    width: 50%;
+    height: 100%;
+    border: 2px solid white;
+} */
+.info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.info h1{
+    text-align: center;
+    font-weight: lighter;
+}
+.info p{
+    font-size: 1em;
+    font-weight: lighter;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    height: 100%;
+}
+.contact h1{
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+.fav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fav i{
+    font-size: 3em;
+    color: white;
+}
+.rateus{
+     display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.rateus h1{
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+.feed{
+    width: 95%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    row-gap: 1em;
+}
+.feed textarea{
+    height: 90%;
+    border-radius: 1em;
+    resize: none;
+}
+.feedtext:focus{
+    outline: none;
+}
+
+.feed button{
+    width: 50%;
+    margin: auto;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.upperLine{
+    width: 50%;
+    background-color: white;
+    height: 1px;
+}
+.horline{
+    width: 1px;
+    height: 95%;
+    background-color: white;
+}
+
+
+
+/* ExtraCSS */
+
+.div2btns{
+    transition: transform 0.2s ease;
+}
+
+.div2btns:hover {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
